@@ -1,0 +1,61 @@
+/* There are live-chat and learn-how sections */
+
+.live-chat {
+    background-size: contain;
+    background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-02.png), linear-gradient(150deg, #ffba61 0%, #ffe970 100%);
+    background-repeat: no-repeat;
+    padding-top: 15vw;
+
+}
+
+.learn-more {
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 20vw;
+    padding-bottom: 10vw;
+    background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-11.png), linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
+}
+
+.live-chat-content,
+.learn-more-content{
+    text-align: center;
+}
+
+.live-chat-content,
+.learn-more-content{
+    padding: 2rem 0 2rem 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.live-chat-content h2,
+.learn-more-content h2 {
+    font-size: 2.8rem;
+    text-shadow: 0em 0.1em 2em rgba(0, 0, 0, 0.7);
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.3;
+    padding: 2rem 0 2rem 0;
+}
+
+.live-chat-content button,
+.learn-more-content button {
+    margin-top: 2rem;
+}
+
+.live-chat-content p,
+.learn-more-content p {
+    color: white;
+    text-shadow: 0em 0.1em 2em rgba(0, 0, 0, 0.4);
+}
+
+.live-chat-end {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0xMjgwIDMuNEMxMDUwLjU5IDE4IDEwMTkuNCA4NC44OSA3MzQuNDIgODQuODljLTMyMCAwLTMyMC04NC4zLTY0MC04NC4zQzU5LjQuNTkgMjguMiAxLjYgMCAzLjRWMTQwaDEyODB6IiBmaWxsLW9wYWNpdHk9Ii4zIi8+PHBhdGggZD0iTTAgMjQuMzFjNDMuNDYtNS42OSA5NC41Ni05LjI1IDE1OC40Mi05LjI1IDMyMCAwIDMyMCA4OS4yNCA2NDAgODkuMjQgMjU2LjEzIDAgMzA3LjI4LTU3LjE2IDQ4MS41OC04MFYxNDBIMHoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMTI4MCA1MS43NmMtMjAxIDEyLjQ5LTI0Mi40MyA1My40LTUxMy41OCA1My40LTMyMCAwLTMyMC01Ny02NDAtNTctNDguODUuMDEtOTAuMjEgMS4zNS0xMjYuNDIgMy42VjE0MGgxMjgweiIvPjwvZz48L3N2Zz4=);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 140px;
+    width: 100%;
+    background-position: center top;
+}

@@ -1,0 +1,77 @@
+/* There are pricing and what they are saying sections*/
+.pricing {
+    background-size: contain;
+    background-position: center bottom 0px;
+    background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-01.png), linear-gradient(180deg, #ffffff 0%, #eef9ff 100%);
+    background-repeat: no-repeat;
+    padding-bottom: 10vw;
+}
+
+.pricing-headings,
+.what-they-saying-headings {
+    text-align: center;
+    padding: 1.8rem 0 1.8rem 0;
+}
+
+.pricing-card,
+.what-they-saying-card {
+    background-color: white;
+    padding: 0.5rem 2.5rem 2rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 90px 160px 0px rgba(52, 51, 53, 0.06);
+}
+
+.pricing-card h4 ,
+.what-they-saying-card h4{
+    padding: 0 0 0.9rem 0;
+    margin: 0;
+    font-weight: bold;
+    text-align: start;
+}
+
+.price {
+    display: flex;
+}
+
+.price-list .list-item {
+    display: flex;
+    align-items: center;
+}
+
+.price-list .list-item i {
+    margin-right: 1rem;
+}
+
+.pricing-cards,
+.what-they-saying-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.price-button{
+    margin-top: 2rem;
+    text-align: center;
+}
+.pricing-card hr {
+    padding: 0;
+}
+.what-they-saying-card img{
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    
+}
+.what-they-saying-card p{
+    font-size: medium;
+    margin-top: 1rem;
+}
+.what-they-saying-card {
+    text-align: center;
+}
+@media (max-width: 769px) {
+    .pricing-cards,
+    .what-they-saying-cards {
+        flex-direction: column;
+    }
+
+}

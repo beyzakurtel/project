@@ -1,0 +1,117 @@
+.satisfaction-guaranteed-content h3{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.satisfaction-guaranteed-boxes{
+    display: flex;
+    gap: 4rem;
+}
+
+.satisfaction-guaranteed-box{
+    padding: 2.5rem;
+    background-position: left bottom 0px;
+    background-color: #b0ecf3;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0px 90px 160px 0px rgba(0, 0, 0, 0.06);
+}
+.box1{
+    background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-06.png), linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
+}
+.box2{
+    background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-07-1.png), linear-gradient(150deg, #ffba61 0%, #ffdc71 100%);
+}
+.satisfaction-guaranteed-box h4{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.satisfaction-guaranteed-box p{
+    color: white;
+    margin-bottom: 2rem;
+}
+@media (max-width: 769px) {
+    .satisfaction-guaranteed-boxes {
+        flex-direction: column;
+    }
+
+}
+
+
+
+/* Genel kutu stili */
+.satisfaction-guaranteed-box {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Form etiketleri ve input stili */
+.form-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.file-input {
+    padding: 10px 20px 40px 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+/* Tahmin sonucu kutusu */
+.result {
+    background-color: #e7f7e7;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.result h2{
+    font-size: xx-large !important;
+}
+/* Yüklenen görüntü */
+.uploaded-image {
+    margin-top: 20px;
+}
+
+.uploaded-image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Güven skoru ve sonucu vurgulamak */
+.result p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Responsive tasarım */
+@media (max-width: 600px) {
+    .satisfaction-guaranteed-box {
+        width: 95%;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+input[type="file"] {
+    margin: 15px 0;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="static/css/about.css">
+    <link rel="stylesheet" href="static/css/services.css">
+    <link rel="stylesheet" href="static/css/features.css">
+    <link rel="stylesheet" href="static/css/fileManagment.css">
+    <link rel="stylesheet" href="static/css/easySetup.css">
+    <link rel="stylesheet" href="static/css/price-whatTheySaying.css">
+    <link rel="stylesheet" href="static/css/satisfaction.css">
+    <link rel="stylesheet" href="static/css/learn-live.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>Tumor Detect</title>
+</head>
+
+<body>
+    <!--Header start-->
+    <header id="header" class="header">
+        <nav class="navbar">
+            <div class="navbar-heading">
+                <h1>
+                    <a href="#">Beyin Tümörü Tespit Sistemi</a>
+                </h1>
+            </div>
+        </nav>
+    </header>
+    <!--Header end-->
+
+    <!--About hosting start-->
+    <div id="about-hosting" class="about-hosting">
+        <div class="container about-hosting-content">
+            <div class="about-hosting-text">
+                <div class="about-hosting-tex1">
+                    <h2>Görsel Analizle İdeal Sonuçlar</h2>
+                    <p class="text">Beyin tümörü, anormal hücrelerin beynin dokusunda kontrolsüz büyümesiyle oluşur.
+                        Erken teşhis, tedavi sürecinde büyük fark yaratabilir. Bu yüzden düzenli kontrol ve dikkatli
+                        gözlem önemlidir. Tıbbi sonuçlarınızın doğruluğunu teyit etmek için mutlaka bir uzman doktora
+                        danışmayı unutmayın.
+                    </p>
+                </div>
+                <button class="button bggrey"><a href="#satisfaction-guaranteed" class="scroll-link" style="text-decoration: none; color: inherit;">Get Started</a></button>
+            </div>
+            <div class="about-hosting-img">
+                <img fetchpriority="high" decoding="async" width="500" height="500" alt="gdgfg"
+                    src="/static/img/brain.png">
+            </div>
+        </div>
+    </div>
+    <!--Abbout hosting end-->
+
+
+    <!--Satisfaction guaranteed start-->
+    <div id="satisfaction-guaranteed" class="satisfaction-guaranteed margin-top">
+        <div class="container">
+            <div class="satisfaction-guaranteed-content">
+                <div class="what-they-saying-headings">
+                    <h2 class="subtitle">Nasıl Çalışıyor?</h2>
+                    <h3 class="intro">Görüntüyü Yükle, Tümör Var mı Yok mu Kontrol Et!
+                    </h3>
+                </div>
+                <div class="satisfaction-guaranteed-boxes">
+                    <div class="satisfaction-guaranteed-box box2">
+                        <form action="/" method="POST" enctype="multipart/form-data" class="upload-form">
+                            <label for="image" class="form-label">
+                                <p class="text" style="font-size: larger;">MRI Görüntüsü Yükleyin:</p>
+                            </label>
+                            <input type="file" name="image" id="image" accept="image/*" required class="file-input">
+                            <button class="button bggrey">Tahmin Et</button>
+                        </form>
+                        {% if image_url %}
+                        <div class="uploaded-image">
+                            <img src="{{ image_url }}" alt="Yüklenen Görüntü"
+                                style="max-width: 300px; border: 1px solid #ccc;">
+                        </div>
+                        {% if result %}
+                        <div class="result">
+                            <h2>Tahmin Sonucu:</h2>
+                            <p><strong>{{ result }}</strong></p>
+                            
+                        </div>
+
+                    
+                        {% endif %}
+                        {% endif %}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Satisfaction guaranteed end-->
+
+
+    <!--What they are saying start-->
+    <div id="what-they-saying" class="what-they-saying margin-top">
+        <div class="container">
+            <div class="what-they-saying-headings">
+                <h2 class="subtitle">Kimler Çalıştı?</h2>
+                <h3 class="intro">Kurucular
+                </h3>
+            </div>
+            <div class="what-they-saying-cards">
+                <div class="what-they-saying-card">
+                    <img src="/static/img/WhatsApp Image 2024-06-24 at 20.39.58.jpeg.jpg" alt="girl" width="90" height="90" style="object-fit: contain;">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, fugit dicta? Consequuntur quis tempore dolore voluptatum fugiat exercitationem voluptatibus facilis error placeat ex quasi eos laborum culpa, ut sit dolorum beatae ad voluptas rerum. Rerum.</p>
+                    <p><b>Muhsina Atahan</b></p>
+                    <p class="text">Dev Lead, Divi Corner</p>
+                </div>
+                <div class="what-they-saying-card">
+                    <img src="/static/img/beyza.jpg"
+                        alt="girl" width="90" height="90" >
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem ab reiciendis obcaecati error id. Numquam eum ad maxime facilis ullam? Voluptatem maiores qui vitae quas recusandae, reprehenderit reiciendis nihil, ducimus laudantium quasi iusto ab!</p>
+                    <p><b>Beyza Kurtel</b></p>
+                    <p class="text">IT Director, Monarch Inc.</p>
+                </div>
+                <div class="what-they-saying-card">
+                    <img src="/static/img/elvan.jpg"
+                        alt="girl" width="90" height="90">
+                    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem earum perferendis facere harum beatae nisi ducimus tempora, est qui veritatis quam numquam, corporis minima repellendus quas tenetur laboriosam voluptatem quod voluptatum magni corrupti maxime quis.</p>
+                    <p><b>Elvan Karakaya</b></p>
+                    <p class="text">CEO, Extra Space</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--What they are saying end-->
+
+
+    <!--Learn more start-->
+    <div id="learn-more" class="learn-more margin-top">
+        <div class="container">
+            <div class="learn-more-content">
+                <h2>30 Gün Ücretsiz</h2>
+                <p class="text">
+                    Yüklediğiniz görüntüyle beyin tümörünü hızlıca tespit edin. Sağlığınız için güvenilir ve kolay çözüm
+                    burada!</p>,
+                <button class="button bggrey">Daha Fazla</button>
+            </div>
+        </div>
+    </div>
+    <!--Learn more end-->
+
+    <!--Footer start-->
+    <footer id="footer" class="footer">
+        <div class="container footer-content">
+            <p>
+                Designed by me!
+            </p>
+            <ul>
+                <li>
+                    <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-wifi"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!--Footer end-->
+</body>
+
+</html>
