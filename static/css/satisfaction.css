@@ -40,8 +40,9 @@
 .satisfaction-guaranteed-box {
     padding: 20px;
     border-radius: 10px;
-    box-shadow:  4px 4px 8px rgba(0, 86, 236, 0.1);
+    box-shadow:  10px 8px 8px rgba(0, 86, 236, 0.1);
     width: 100%;
+    max-width: 600px;
     margin: 0 auto;
     text-align: center;
 }
@@ -84,15 +85,17 @@
     margin-top: 20px;
 }
 
+
 .result p.tumor-yes {
-    color: red;
+    color: red ;
+}
+.result p.tumor-no {
+    color: green ;
 }
 
-.result p.tumor-no {
-    color: green;
-}
+
 .uploaded-image img {
-    max-width: 100%;
+    max-width: 150px;
     height: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
