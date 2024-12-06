@@ -7,11 +7,12 @@ import os
 app = Flask(__name__, static_folder='static')
 
 
-# Modeli yükleyin
+# Modeli yukleyin
 model = tf.keras.models.load_model("brain_tumor_model2.keras", compile=False)
 
 
-# Geçici dosyalar için bir klasör belirleyin
+
+# Gecici dosyalar için bir klasor belirleyin
 UPLOAD_FOLDER = "static/uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
@@ -28,10 +29,10 @@ def index():
             filepath = os.path.join(UPLOAD_FOLDER, file.filename)
             file.save(filepath)
 
-            # Resmi modelin giriş boyutuna göre işleyin
+            # Resmi modelin giris boyutuna göre isleyin
             image = Image.open(filepath)
 
-            # Resmin RGB formatında olup olmadığını kontrol edin ve gerekirse dönüştürün
+            # Resmin RGB formatında olup olmadığını kontrol edin ve gerekirse 
             if image.mode != "RGB":
                 image = image.convert("RGB")
 
@@ -42,9 +43,9 @@ def index():
             # Tahmin yapın
             prediction = model.predict(image_array)
             confidence = prediction[0][0]
-            result = "Tümör Var" if confidence > 0.5 else "Tümör Yok"
+            result = "Tümor Var" if confidence > 0.5 else "Tümor Yok"
 
-            # Görüntü URL'sini belirleyin
+            #  URL'sini belirleyin
             image_url = url_for("static", filename=f"uploads/{file.filename}")
 
     return render_template("index.html", result=result, confidence=confidence, image_url=image_url)
