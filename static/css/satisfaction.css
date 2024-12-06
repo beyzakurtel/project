@@ -55,9 +55,9 @@
 }
 
 .file-input {
-    padding: 10px 20px 40px 20px;
+    padding: 10px ;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-radius: 5px;
     width: 100%;
     cursor: pointer;
@@ -68,8 +68,7 @@
 /* Tahmin sonucu kutusu */
 .result {
     background-color: #e8f1fb;
-    padding: 15px;
-    margin-top: 20px;
+    margin-top: 40px;
     border-radius: 5px;
     color: black;
     box-shadow:  4px rgba(13, 13, 13, 0.1);
@@ -95,7 +94,7 @@
 
 
 .uploaded-image img {
-    max-width: 150px;
+    max-width: 200px;
     height: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
