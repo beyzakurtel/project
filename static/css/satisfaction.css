@@ -2,25 +2,17 @@
     text-align: center;
     margin-bottom: 5rem;
 }
-.satisfaction-guaranteed-boxes{
-    display: flex;
-    gap: 4rem;
-}
+
 
 .satisfaction-guaranteed-box{
     padding: 2.5rem;
     background-position: left bottom 0px;
-    background-color: #b0ecf3;
     border-radius: 1.5rem;
     overflow: hidden;
     box-shadow: 0px 90px 160px 0px rgba(0, 0, 0, 0.06);
+    background-color: rgb(255, 255, 255);
 }
-.box1{
-    background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-06.png), linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
-}
-.box2{
-    background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-07-1.png), linear-gradient(150deg, #ffba61 0%, #ffdc71 100%);
-}
+
 .satisfaction-guaranteed-box h4{
     color: white;
     font-size: 1.6rem;
@@ -36,16 +28,20 @@
     }
 
 }
-
+.file-input:disabled {
+    opacity: 0.5;
+}
+.file-input:enabled {
+    opacity: 1;
+}
 
 
 /* Genel kutu stili */
 .satisfaction-guaranteed-box {
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 500px;
+    box-shadow:  4px 4px 8px rgba(0, 86, 236, 0.1);
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -70,22 +66,31 @@
 
 /* Tahmin sonucu kutusu */
 .result {
-    background-color: #e7f7e7;
+    background-color: #e8f1fb;
     padding: 15px;
     margin-top: 20px;
     border-radius: 5px;
     color: black;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow:  4px rgba(13, 13, 13, 0.1);
+    font-weight: bold;
+    text-align: center;
 
 }
 .result h2{
-    font-size: xx-large !important;
+    font-size: medium !important;
 }
 /* Yüklenen görüntü */
 .uploaded-image {
     margin-top: 20px;
 }
 
+.result p.tumor-yes {
+    color: red;
+}
+
+.result p.tumor-no {
+    color: green;
+}
 .uploaded-image img {
     max-width: 100%;
     height: auto;
@@ -93,10 +98,13 @@
     border-radius: 5px;
     margin-top: 10px;
 }
-
+.upload-form input{
+    text-align: center;
+    opacity: 0.6;
+}
 /* Güven skoru ve sonucu vurgulamak */
 .result p {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
     margin-top: 5px;
 }
@@ -115,3 +123,10 @@
 input[type="file"] {
     margin: 15px 0;
 }
+.file-input:disabled {
+    opacity: 0.5;
+}
+.file-input:enabled {
+    opacity: 1;
+}
+
