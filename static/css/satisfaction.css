@@ -46,7 +46,9 @@
     margin: 0 auto;
     text-align: center;
 }
-
+.upload-form .button{
+    margin-bottom: 20px;
+}
 /* Form etiketleri ve input stili */
 .form-label {
     font-size: 18px;
