@@ -67,7 +67,7 @@
                     <div class="satisfaction-guaranteed-box box2">
                         <form action="/" method="POST" enctype="multipart/form-data" class="upload-form">
                             <label for="image" class="form-label">
-                                <p class="text" style="font-size: x-large; color: black;">MRI Görüntüsü Yükleyin:</p>
+                                <p class="text" style="font-size: large; color: black;">MRI Görüntüsü Yükleyin</p>
                             </label>
                             <input type="file" name="image" id="image" accept="image/*" required class="file-input">
                             <button class="button bggrey">Tahmin Et</button>
@@ -80,7 +80,7 @@
                             {% if result %}
                                 <div class="result">
                                     <h2>Tahmin Sonucu:</h2>
-                                    <p class="{% if result == 'Tumor Var' %}tumor-yes{% else %}tumor-no{% endif %}"><strong>{{ result }}</strong></p>
+                                    <p class="{% if result == 'Tümor Var' %}tumor-yes{% else %}tumor-no{% endif %}"><strong>{{ result }}</strong></p>
                                 </div>
                             {% endif %}
                         {% endif %}
@@ -137,7 +137,9 @@
                 <p class="text">
                     Yüklediğiniz görüntüyle beyin tümörünü hızlıca tespit edin. Sağlığınız için güvenilir ve kolay çözüm
                     burada!</p>,
-                <button class="button bggrey">Daha Fazla</button>
+                    <button class="button bggrey">
+                        <a href="https://tr.wikipedia.org/wiki/Beyin_t%C3%BCm%C3%B6r%C3%BC" target="_blank" style="color: inherit; text-decoration: none;">Daha Fazla</a>
+                      </button>
             </div>
         </div>
     </div>
@@ -166,3 +168,16 @@
 </body>
 
 </html>
+<script>
+    
+    window.onload = function() {
+        if (sessionStorage.getItem('scrollPosition')) {
+            window.scrollTo(0, sessionStorage.getItem('scrollPosition'));
+        }
+    }
+
+    
+    window.onscroll = function() {
+        sessionStorage.setItem('scrollPosition', window.scrollY);
+    };
+</script>
