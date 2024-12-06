@@ -67,26 +67,24 @@
                     <div class="satisfaction-guaranteed-box box2">
                         <form action="/" method="POST" enctype="multipart/form-data" class="upload-form">
                             <label for="image" class="form-label">
-                                <p class="text" style="font-size: larger;">MRI Görüntüsü Yükleyin:</p>
+                                <p class="text" style="font-size: x-large; color: black;">MRI Görüntüsü Yükleyin:</p>
                             </label>
                             <input type="file" name="image" id="image" accept="image/*" required class="file-input">
                             <button class="button bggrey">Tahmin Et</button>
                         </form>
+                        
                         {% if image_url %}
-                        <div class="uploaded-image">
-                            <img src="{{ image_url }}" alt="Yüklenen Görüntü"
-                                style="max-width: 300px; border: 1px solid #ccc;">
-                        </div>
-                        {% if result %}
-                        <div class="result">
-                            <h2>Tahmin Sonucu:</h2>
-                            <p><strong>{{ result }}</strong></p>
-                            
-                        </div>
-
-                    
+                            <div class="uploaded-image">
+                                <img src="{{ image_url }}" alt="Yüklenen Görüntü">
+                            </div>
+                            {% if result %}
+                                <div class="result">
+                                    <h2>Tahmin Sonucu:</h2>
+                                    <p class="{% if result == 'Tumor Var' %}tumor-yes{% else %}tumor-no{% endif %}"><strong>{{ result }}</strong></p>
+                                </div>
+                            {% endif %}
                         {% endif %}
-                        {% endif %}
+                        
                     </div>
 
                 </div>
