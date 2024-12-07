@@ -40,15 +40,14 @@
 .satisfaction-guaranteed-box {
     padding: 20px;
     border-radius: 10px;
-    box-shadow:  10px 8px 8px rgba(0, 86, 236, 0.1);
+    box-shadow:  10px 8px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
+    background-color: #e8f1fb;
 }
-.upload-form .button{
-    margin-bottom: 20px;
-}
+
 /* Form etiketleri ve input stili */
 .form-label {
     font-size: 18px;
@@ -57,7 +56,7 @@
 }
 
 .file-input {
-    padding: 10px ;
+    padding: 20px ;
     font-size: 20px;
     margin-bottom: 30px;
     border-radius: 5px;
@@ -65,17 +64,20 @@
     cursor: pointer;
 }
 
-
+.upload-form .button{
+    margin-bottom: 20px;
+}
 
 /* Tahmin sonucu kutusu */
 .result {
-    background-color: #e8f1fb;
+    background-color: rgb(255, 255, 255);
     margin-top: 40px;
     border-radius: 5px;
     color: black;
-    box-shadow:  4px rgba(13, 13, 13, 0.1);
+    box-shadow:  4px rgba(0, 0, 0, 0.1);
     font-weight: bold;
     text-align: center;
+    padding: 20px 20px 4px 20px;
 
 }
 .result h2{
@@ -133,4 +135,5 @@ input[type="file"] {
 .file-input:enabled {
     opacity: 1;
 }
+
 
