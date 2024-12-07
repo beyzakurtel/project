@@ -59,18 +59,20 @@
         <div class="container">
             <div class="satisfaction-guaranteed-content">
                 <div class="what-they-saying-headings">
-                    <h2 class="subtitle">Nasıl Çalışıyor?</h2>
-                    <h3 class="intro">Görüntüyü Yükle, Tümör Var mı Yok mu Kontrol Et!
+                    <h2 class="subtitle">How Working</h2>
+                    <h3 class="intro">MRI Görüntüsü Yükleyin
                     </h3>
                 </div>
                 <div class="satisfaction-guaranteed-boxes">
                     <div class="satisfaction-guaranteed-box box2">
                         <form action="/" method="POST" enctype="multipart/form-data" class="upload-form">
                             <label for="image" class="form-label">
-                                <p class="text" style="font-size: large; color: black;">MRI Görüntüsü Yükleyin</p>
+                            <!-- <p class="text" style="font-size: x-large; color: rgb(0, 0, 0);">MRI Görüntüsü Yükleyin</p> -->
                             </label>
-                            <input type="file" name="image" id="image" accept="image/*" required class="file-input">
-                            <button class="button bggrey">Tahmin Et</button>
+                            <div class="input-container">
+                                <input type="file" name="image" id="image" accept="image/*" required class="file-input">
+                                <button class="button bggrey">Tahmin Et</button>
+                            </div>
                         </form>
                         
                         {% if image_url %}
